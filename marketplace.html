@@ -24,8 +24,7 @@
 
         .marketnavbar {
             font-size: 23px;
-            border-bottom-left-radius: 20px;
-            border-bottom-right-radius: 20px;
+
             padding-top: 5px;
             padding-right: 5px;
             padding-left: 5px;
@@ -83,6 +82,7 @@
 
         .marketplacemarket-s {
             font-size: 20px;
+            text-align: center;
         }
 
         .marketplace-title {
@@ -162,37 +162,45 @@
     </style>
     <style>
         /*==market-tabs====*/
+
+        .discovertext {
+            font-weight: bold;
+            color: black;
+            font-size: 30px;
+            margin: 0%;
+            text-align: center;
+        }
+
         .market-tabs {
             font-weight: bold;
-            font-size: 50px;
+            font-size: 20px;
         }
 
-        @media only screen and (max-width: 450px) {
-            .market-tabs {
-                font-weight: bold;
-                font-size: 20px;
-            }
-
-            .market-tablist {
-                padding-top: 10px;
-                padding-bottom: 10px;
-                margin-top: 30px;
-                border-bottom-left-radius: 20px;
-                border-bottom-right-radius: 20px;
-                overflow-x: auto;
-                overflow-y: hidden;
-                display: inline-flex;
-
-
-                background-color: white;
-            }
-
-            .market-tablist .nav-tabs {
-                text-align: center;
-                width: 100%;
-                border: none;
-            }
+        .tab-pane {
+            padding: 0%;
         }
+
+        .market-tablist {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            position: fixed;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            overflow-x: auto;
+            overflow-y: hidden;
+            display: inline-flex;
+
+
+
+            background-color: white;
+        }
+
+        .market-tablist .nav-tabs {
+            text-align: center;
+            width: 100%;
+            border: none;
+        }
+
 
         .market-tablist .nav-tabs {
             text-align: center;
@@ -235,6 +243,10 @@
             color: #fff;
             border-color: transparent;
         }
+
+        .prod-card {
+            margin-top: 70px;
+        }
     </style>
     <!-- Scrollbar Custom CSS -->
     <link rel="stylesheet"
@@ -246,8 +258,10 @@
 </head>
 
 <body>
-    <div class="d-flex justify-content-between marketnavbar bg-white sticky-top border">
-        <div class="p-2 "><i class='bx bx-chevron-left-circle'></i></div>
+    <div class="d-flex justify-content-between marketnavbar bg-white sticky-top ">
+        <a href="index.html">
+            <div class="p-2 "><i class='bx bx-chevron-left-circle'></i></div>
+        </a>
         <div class="p-2 marketplace-title">market</div>
         <div class="p-2 ">
             <i class='bx bx-search-alt-2'></i>
@@ -257,473 +271,8 @@
 
 
     </div>
-    <div class="d-flex  marketplacemarket-s">
-        <div class="p-2 mr-auto  ">Store you follow</div>
 
-
-
-    </div>
-
-
-    </div>
-    <div class="container-fluid market-market-scroll">
-        <div class="marketmarket-card border bg-white">
-            <div class="card-body">
-                <figure class="figure">
-                    <img src="Apple-logo.png" class="figure-img img-fluid rounded" alt="">
-                    <figcaption class="figure-caption text-center ">market name</figcaption>
-                </figure>
-            </div>
-        </div>
-        <div class="marketmarket-card border bg-white">
-            <div class="card-body">
-                <figure class="figure">
-                    <img src="Apple-logo.png" class="figure-img img-fluid rounded" alt="">
-                    <figcaption class="figure-caption text-center ">market name</figcaption>
-                </figure>
-            </div>
-        </div>
-        <div class="marketmarket-card border bg-white">
-            <div class="card-body">
-                <figure class="figure">
-                    <img src="Apple-logo.png" class="figure-img img-fluid rounded" alt="">
-                    <figcaption class="figure-caption text-center ">market name</figcaption>
-                </figure>
-            </div>
-        </div>
-        <div class="marketmarket-card border bg-white">
-            <div class="card-body">
-                <figure class="figure">
-                    <img src="Apple-logo.png" class="figure-img img-fluid rounded" alt="">
-                    <figcaption class="figure-caption text-center ">market name</figcaption>
-                </figure>
-            </div>
-        </div>
-        <div class="marketmarket-card border bg-white">
-            <div class="card-body">
-                <figure class="figure">
-                    <img src="Apple-logo.png" class="figure-img img-fluid rounded" alt="">
-                    <figcaption class="figure-caption text-center ">market name</figcaption>
-                </figure>
-            </div>
-        </div>
-        <div class="marketmarket-card border bg-white">
-            <div class="card-body">
-                <figure class="figure">
-                    <img src="Apple-logo.png" class="figure-img img-fluid rounded" alt="">
-                    <figcaption class="figure-caption text-center ">market name</figcaption>
-                </figure>
-            </div>
-        </div>
-        <div class="marketmarket-card border bg-white">
-            <div class="card-body">
-                <figure class="figure">
-                    <img src="Apple-logo.png" class="figure-img img-fluid rounded" alt="">
-                    <figcaption class="figure-caption text-center ">market name</figcaption>
-                </figure>
-            </div>
-        </div>
-        <div class="marketmarket-card border bg-white">
-            <div class="card-body">
-                <figure class="figure">
-                    <img src="Apple-logo.png" class="figure-img img-fluid rounded" alt="">
-                    <figcaption class="figure-caption text-center ">market name</figcaption>
-                </figure>
-            </div>
-        </div>
-        <div class="marketmarket-card border bg-white">
-            <div class="card-body">
-                <figure class="figure">
-                    <img src="Apple-logo.png" class="figure-img img-fluid rounded" alt="">
-                    <figcaption class="figure-caption text-center ">market name</figcaption>
-                </figure>
-            </div>
-        </div>
-        <div class="marketmarket-card border bg-white">
-            <div class="card-body">
-                <figure class="figure">
-                    <img src="Apple-logo.png" class="figure-img img-fluid rounded" alt="">
-                    <figcaption class="figure-caption text-center ">market name</figcaption>
-                </figure>
-            </div>
-        </div>
-        <div class="marketmarket-card border bg-white">
-            <div class="card-body">
-                <figure class="figure">
-                    <img src="Apple-logo.png" class="figure-img img-fluid rounded" alt="">
-                    <figcaption class="figure-caption text-center ">market name</figcaption>
-                </figure>
-            </div>
-        </div>
-        <div class="marketmarket-card border bg-white">
-            <div class="card-body">
-                <figure class="figure">
-                    <img src="Apple-logo.png" class="figure-img img-fluid rounded" alt="">
-                    <figcaption class="figure-caption text-center ">market name</figcaption>
-                </figure>
-            </div>
-        </div>
-        <div class="marketmarket-card border bg-white">
-            <div class="card-body">
-                <figure class="figure">
-                    <img src="Apple-logo.png" class="figure-img img-fluid rounded" alt="">
-                    <figcaption class="figure-caption text-center ">market name</figcaption>
-                </figure>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid market-offers">
-        Top Rated
-
-        <div class="container-fluid ratedcards ">
-
-            <!--product card start-->
-            <div class="market-card border bg-white">
-                <div class="d-flex market-cardtop">
-                    <div class="p-2 mr-auto "><img src="img_avatar.png" alt="Avatar" class="product-avatar"></div>
-                    <div class="p-2 "><i class='bx bxs-star' style='color:rgba(255,233,46,0.85)'></i> 5.0</div>
-                </div>
-                <img class="marketcard-img" src="marketcard.jpg" alt="Card image">
-                <div class="d-flex ">
-                    <div class="p-2 mr-auto product-mini "><a href="#"><span class="product-name">Polo
-                                T-Shirt</span></br>
-                            <span>&#8377 500</span></a>
-                    </div>
-                    <div class="p-2 "><i class='bx bx-bookmark bx-sm'></i></div>
-                </div>
-            </div>
-            <!--product card end-->
-            <!--product card start-->
-            <div class="market-card border bg-white">
-                <div class="d-flex market-cardtop">
-                    <div class="p-2 mr-auto "><img src="img_avatar.png" alt="Avatar" class="product-avatar"></div>
-                    <div class="p-2 "><i class='bx bxs-star' style='color:rgba(255,233,46,0.85)'></i> 5.0</div>
-                </div>
-                <img class="marketcard-img" src="marketcard.jpg" alt="Card image">
-                <div class="d-flex ">
-                    <div class="p-2 mr-auto product-mini "><a href="#"><span class="product-name">Polo
-                                T-Shirt</span></br>
-                            <span>&#8377 500</span></a>
-                    </div>
-                    <div class="p-2 "><i class='bx bx-bookmark bx-sm'></i></div>
-                </div>
-            </div>
-            <!--product card end-->
-            <!--product card start-->
-            <div class="market-card border bg-white">
-                <div class="d-flex market-cardtop">
-                    <div class="p-2 mr-auto "><img src="img_avatar.png" alt="Avatar" class="product-avatar"></div>
-                    <div class="p-2 "><i class='bx bxs-star' style='color:rgba(255,233,46,0.85)'></i> 5.0</div>
-                </div>
-                <img class="marketcard-img" src="marketcard.jpg" alt="Card image">
-                <div class="d-flex ">
-                    <div class="p-2 mr-auto product-mini "><a href="#"><span class="product-name">Polo
-                                T-Shirt</span></br>
-                            <span>&#8377 500</span></a>
-                    </div>
-                    <div class="p-2 "><i class='bx bx-bookmark bx-sm'></i></div>
-                </div>
-            </div>
-            <!--product card end-->
-
-            <!--product card start-->
-            <div class="market-card border bg-white">
-                <div class="d-flex market-cardtop">
-                    <div class="p-2 mr-auto "><img src="img_avatar.png" alt="Avatar" class="product-avatar"></div>
-                    <div class="p-2 "><i class='bx bxs-star' style='color:rgba(255,233,46,0.85)'></i> 5.0</div>
-                </div>
-                <img class="marketcard-img" src="marketcard.jpg" alt="Card image">
-                <div class="d-flex ">
-                    <div class="p-2 mr-auto product-mini "><a href="#"><span class="product-name">Polo
-                                T-Shirt</span></br>
-                            <span>&#8377 500</span></a>
-                    </div>
-                    <div class="p-2 "><i class='bx bx-bookmark bx-sm'></i></div>
-                </div>
-            </div>
-            <!--product card end-->
-            <!--product card start-->
-            <div class="market-card border bg-white">
-                <div class="d-flex market-cardtop">
-                    <div class="p-2 mr-auto "><img src="img_avatar.png" alt="Avatar" class="product-avatar"></div>
-                    <div class="p-2 "><i class='bx bxs-star' style='color:rgba(255,233,46,0.85)'></i> 5.0</div>
-                </div>
-                <img class="marketcard-img" src="marketcard.jpg" alt="Card image">
-                <div class="d-flex ">
-                    <div class="p-2 mr-auto product-mini "><a href="#"><span class="product-name">Polo
-                                T-Shirt</span></br>
-                            <span>&#8377 500</span></a>
-                    </div>
-                    <div class="p-2 "><i class='bx bx-bookmark bx-sm'></i></div>
-                </div>
-            </div>
-            <!--product card end-->
-            <!--product card start-->
-            <div class="market-card border bg-white">
-                <div class="d-flex market-cardtop">
-                    <div class="p-2 mr-auto "><img src="img_avatar.png" alt="Avatar" class="product-avatar"></div>
-                    <div class="p-2 "><i class='bx bxs-star' style='color:rgba(255,233,46,0.85)'></i> 5.0</div>
-                </div>
-                <img class="marketcard-img" src="marketcard.jpg" alt="Card image">
-                <div class="d-flex ">
-                    <div class="p-2 mr-auto product-mini "><a href="#"><span class="product-name">Polo
-                                T-Shirt</span></br>
-                            <span>&#8377 500</span></a>
-                    </div>
-                    <div class="p-2 "><i class='bx bx-bookmark bx-sm'></i></div>
-                </div>
-            </div>
-            <!--product card end-->
-        </div>
-    </div>
-
-    <div class="container-fluid market-offers">
-        On Sale
-
-        <div class="container-fluid ratedcards ">
-
-            <!--product card start-->
-            <div class="market-card border bg-white">
-                <div class="d-flex market-cardtop">
-                    <div class="p-2 mr-auto "><img src="img_avatar.png" alt="Avatar" class="product-avatar"></div>
-                    <div class="p-2 "><img src="discount.png" alt="Avatar" class="discountproduct-avatar"> 20%</div>
-                </div>
-                <img class="marketcard-img" src="marketcard.jpg" alt="Card image">
-                <div class="d-flex ">
-                    <div class="p-2 mr-auto product-mini "><a href="#"><span class="product-name">Polo
-                                T-Shirt</span></br>
-                            <span>&#8377 500</span></a>
-                    </div>
-                    <div class="p-2 "><i class='bx bx-bookmark bx-sm'></i></div>
-                </div>
-            </div>
-            <!--product card end-->
-            <!--product card start-->
-            <div class="market-card border bg-white">
-                <div class="d-flex market-cardtop">
-                    <div class="p-2 mr-auto "><img src="img_avatar.png" alt="Avatar" class="product-avatar"></div>
-                    <div class="p-2 "><img src="discount.png" alt="Avatar" class="discountproduct-avatar"> 20%</div>
-                </div>
-                <img class="marketcard-img" src="marketcard.jpg" alt="Card image">
-                <div class="d-flex ">
-                    <div class="p-2 mr-auto product-mini "><a href="#"><span class="product-name">Polo
-                                T-Shirt</span></br>
-                            <span>&#8377 500</span></a>
-                    </div>
-                    <div class="p-2 "><i class='bx bx-bookmark bx-sm'></i></div>
-                </div>
-            </div>
-            <!--product card end-->
-            <!--product card start-->
-            <div class="market-card border bg-white">
-                <div class="d-flex market-cardtop">
-                    <div class="p-2 mr-auto "><img src="img_avatar.png" alt="Avatar" class="product-avatar"></div>
-                    <div class="p-2 "><img src="discount.png" alt="Avatar" class="discountproduct-avatar"> 20%</div>
-                </div>
-                <img class="marketcard-img" src="marketcard.jpg" alt="Card image">
-                <div class="d-flex ">
-                    <div class="p-2 mr-auto product-mini "><a href="#"><span class="product-name">Polo
-                                T-Shirt</span></br>
-                            <span>&#8377 500</span></a>
-                    </div>
-                    <div class="p-2 "><i class='bx bx-bookmark bx-sm'></i></div>
-                </div>
-            </div>
-            <!--product card end-->
-
-            <!--product card start-->
-            <div class="market-card border bg-white">
-                <div class="d-flex market-cardtop">
-                    <div class="p-2 mr-auto "><img src="img_avatar.png" alt="Avatar" class="product-avatar"></div>
-                    <div class="p-2 "><img src="discount.png" alt="Avatar" class="discountproduct-avatar"> 20%</div>
-                </div>
-                <img class="marketcard-img" src="marketcard.jpg" alt="Card image">
-                <div class="d-flex ">
-                    <div class="p-2 mr-auto product-mini "><a href="#"><span class="product-name">Polo
-                                T-Shirt</span></br>
-                            <span>&#8377 500</span></a>
-                    </div>
-                    <div class="p-2 "><i class='bx bx-bookmark bx-sm'></i></div>
-                </div>
-            </div>
-            <!--product card end-->
-            <!--product card start-->
-            <div class="market-card border bg-white">
-                <div class="d-flex market-cardtop">
-                    <div class="p-2 mr-auto "><img src="img_avatar.png" alt="Avatar" class="product-avatar"></div>
-                    <div class="p-2 "><img src="discount.png" alt="Avatar" class="discountproduct-avatar"> 20%</div>
-                </div>
-                <img class="marketcard-img" src="marketcard.jpg" alt="Card image">
-                <div class="d-flex ">
-                    <div class="p-2 mr-auto product-mini "><a href="#"><span class="product-name">Polo
-                                T-Shirt</span></br>
-                            <span>&#8377 500</span></a>
-                    </div>
-                    <div class="p-2 "><i class='bx bx-bookmark bx-sm'></i></div>
-                </div>
-            </div>
-            <!--product card end-->
-            <!--product card start-->
-            <div class="market-card border bg-white">
-                <div class="d-flex market-cardtop">
-                    <div class="p-2 mr-auto "><img src="img_avatar.png" alt="Avatar" class="product-avatar"></div>
-                    <div class="p-2 "><img src="discount.png" alt="Avatar" class="discountproduct-avatar"> 20%</div>
-                </div>
-                <img class="marketcard-img" src="marketcard.jpg" alt="Card image">
-                <div class="d-flex ">
-                    <div class="p-2 mr-auto product-mini "><a href="#"><span class="product-name">Polo
-                                T-Shirt</span></br>
-                            <span>&#8377 500</span></a>
-                    </div>
-                    <div class="p-2 "><i class='bx bx-bookmark bx-sm'></i></div>
-                </div>
-            </div>
-            <!--product card end-->
-        </div>
-    </div>
-    <!--market bottom start-->
-    <div class=" d-flex flex-wrap justify-content-center  ">
-        <!--product card start-->
-        <div class="market-bottom-card border bg-white">
-            <div class="d-flex market-cardtop">
-                <div class="p-2 mr-auto "><img src="img_avatar.png" alt="Avatar" class="product-avatar">
-                    &nbsp;&nbsp;Username</div>
-
-            </div>
-            <img class="market-bottom-card-img" src="marketcard.jpg" alt="Card image">
-            <div class="d-flex ">
-                <div class="p-2 mr-auto product-mini "><a href="#"><span class="product-name">Polo
-                            T-Shirt</span></br>
-                        <span>&#8377 500</span></a>
-                </div>
-                <div class="p-2 "><i class='bx bx-bookmark bx-sm'></i></div>
-            </div>
-        </div>
-        <!--product card end-->
-        <!--product card start-->
-        <div class="market-bottom-card border bg-white">
-            <div class="d-flex market-cardtop">
-                <div class="p-2 mr-auto "><img src="img_avatar.png" alt="Avatar"
-                        class="product-avatar">&nbsp;&nbsp;Username</div>
-
-            </div>
-            <img class="market-bottom-card-img" src="marketcard.jpg" alt="Card image">
-            <div class="d-flex ">
-                <div class="p-2 mr-auto product-mini "><a href="#"><span class="product-name">Polo
-                            T-Shirt</span></br>
-                        <span>&#8377 500</span></a>
-                </div>
-                <div class="p-2 "><i class='bx bx-bookmark bx-sm'></i></div>
-            </div>
-        </div>
-        <!--product card end-->
-        <!--product card start-->
-        <div class="market-bottom-card border bg-white">
-            <div class="d-flex market-cardtop">
-                <div class="p-2 mr-auto "><img src="img_avatar.png" alt="Avatar"
-                        class="product-avatar">&nbsp;&nbsp;Username</div>
-
-            </div>
-            <img class="market-bottom-card-img" src="marketcard.jpg" alt="Card image">
-            <div class="d-flex ">
-                <div class="p-2 mr-auto product-mini "><a href="#"><span class="product-name">Polo
-                            T-Shirt</span></br>
-                        <span>&#8377 500</span></a>
-                </div>
-                <div class="p-2 "><i class='bx bx-bookmark bx-sm'></i></div>
-            </div>
-        </div>
-        <!--product card end-->
-        <!--product card start-->
-        <div class="market-bottom-card border bg-white">
-            <div class="d-flex market-cardtop">
-                <div class="p-2 mr-auto "><img src="img_avatar.png" alt="Avatar" class="product-avatar">
-                    &nbsp;&nbsp;Username</div>
-
-            </div>
-            <img class="market-bottom-card-img" src="marketcard.jpg" alt="Card image">
-            <div class="d-flex ">
-                <div class="p-2 mr-auto product-mini "><a href="#"><span class="product-name">Polo
-                            T-Shirt</span></br>
-                        <span>&#8377 500</span></a>
-                </div>
-                <div class="p-2 "><i class='bx bx-bookmark bx-sm'></i></div>
-            </div>
-        </div>
-        <!--product card end-->
-        <!--product card start-->
-        <div class="market-bottom-card border bg-white">
-            <div class="d-flex market-cardtop">
-                <div class="p-2 mr-auto "><img src="img_avatar.png" alt="Avatar"
-                        class="product-avatar">&nbsp;&nbsp;Username</div>
-
-            </div>
-            <img class="market-bottom-card-img" src="marketcard.jpg" alt="Card image">
-            <div class="d-flex ">
-                <div class="p-2 mr-auto product-mini "><a href="#"><span class="product-name">Polo
-                            T-Shirt</span></br>
-                        <span>&#8377 500</span></a>
-                </div>
-                <div class="p-2 "><i class='bx bx-bookmark bx-sm'></i></div>
-            </div>
-        </div>
-        <!--product card end-->
-        <!--product card start-->
-        <div class="market-bottom-card border bg-white">
-            <div class="d-flex market-cardtop">
-                <div class="p-2 mr-auto "><img src="img_avatar.png" alt="Avatar"
-                        class="product-avatar">&nbsp;&nbsp;Username</div>
-
-            </div>
-            <img class="market-bottom-card-img" src="marketcard.jpg" alt="Card image">
-            <div class="d-flex ">
-                <div class="p-2 mr-auto product-mini "><a href="#"><span class="product-name">Polo
-                            T-Shirt</span></br>
-                        <span>&#8377 500</span></a>
-                </div>
-                <div class="p-2 "><i class='bx bx-bookmark bx-sm'></i></div>
-            </div>
-        </div>
-        <!--product card end-->
-        <!--product card start-->
-        <div class="market-bottom-card border bg-white">
-            <div class="d-flex market-cardtop">
-                <div class="p-2 mr-auto "><img src="img_avatar.png" alt="Avatar"
-                        class="product-avatar">&nbsp;&nbsp;Username</div>
-
-            </div>
-            <img class="market-bottom-card-img" src="marketcard.jpg" alt="Card image">
-            <div class="d-flex ">
-                <div class="p-2 mr-auto product-mini "><a href="#"><span class="product-name">Polo
-                            T-Shirt</span></br>
-                        <span>&#8377 500</span></a>
-                </div>
-                <div class="p-2 "><i class='bx bx-bookmark bx-sm'></i></div>
-            </div>
-        </div>
-        <!--product card end-->
-        <!--product card start-->
-        <div class="market-bottom-card border bg-white">
-            <div class="d-flex market-cardtop">
-                <div class="p-2 mr-auto "><img src="img_avatar.png" alt="Avatar"
-                        class="product-avatar">&nbsp;&nbsp;Username</div>
-
-            </div>
-            <img class="market-bottom-card-img" src="marketcard.jpg" alt="Card image">
-            <div class="d-flex ">
-                <div class="p-2 mr-auto product-mini "><a href="#"><span class="product-name">Polo
-                            T-Shirt</span></br>
-                        <span>&#8377 500</span></a>
-                </div>
-                <div class="p-2 "><i class='bx bx-bookmark bx-sm'></i></div>
-            </div>
-        </div>
-        <!--product card end-->
-    </div>
-    <!--market bottom end-->
-
-    <div class="container-fluid market-tablist sticky-top">
+    <div class="container-fluid market-tablist">
 
 
 
@@ -733,24 +282,15 @@
         <ul class="nav nav-tabs nav-justified" role="tablist">
             <li class="nav-item ">
 
-                <a class="nav-link active " data-toggle="tab" href="#following" role="tab">FOLLOWING</a>
+                <a class="nav-link active " data-toggle="tab" href="#following" role="tab">Discover</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link " data-toggle="tab" href="#recent" role="tab">RECENT</a>
+                <a class="nav-link " data-toggle="tab" href="#recent" role="tab">Trending</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link " data-toggle="tab" href="#popular" role="tab">POPULAR</a>
+                <a class="nav-link " data-toggle="tab" href="#popular" role="tab">Hottest</a>
             </li>
-            <li class="nav-item ">
 
-                <a class="nav-link " data-toggle="tab" href="#following" role="tab">FOLLOWING</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link " data-toggle="tab" href="#recent" role="tab">RECENT</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link " data-toggle="tab" href="#popular" role="tab">POPULAR</a>
-            </li>
 
 
 
@@ -761,19 +301,848 @@
     </div>
     <div class="tab-content">
         <div class="tab-pane container active" id="following">
+            <div class="d-flex  marketplacemarket-s">
+                <div class="p-2 m-2 text-center ">Store you follow</div>
 
-            hiiii
+
+
+            </div>
+            <div class="container-fluid market-market-scroll">
+                <div class="marketmarket-card border bg-white">
+                    <div class="card-body">
+                        <figure class="figure">
+                            <img src="Apple-logo.png" class="figure-img img-fluid rounded" alt="">
+                            <figcaption class="figure-caption text-center ">market name</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="marketmarket-card border bg-white">
+                    <div class="card-body">
+                        <figure class="figure">
+                            <img src="Apple-logo.png" class="figure-img img-fluid rounded" alt="">
+                            <figcaption class="figure-caption text-center ">market name</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="marketmarket-card border bg-white">
+                    <div class="card-body">
+                        <figure class="figure">
+                            <img src="Apple-logo.png" class="figure-img img-fluid rounded" alt="">
+                            <figcaption class="figure-caption text-center ">market name</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="marketmarket-card border bg-white">
+                    <div class="card-body">
+                        <figure class="figure">
+                            <img src="Apple-logo.png" class="figure-img img-fluid rounded" alt="">
+                            <figcaption class="figure-caption text-center ">market name</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="marketmarket-card border bg-white">
+                    <div class="card-body">
+                        <figure class="figure">
+                            <img src="Apple-logo.png" class="figure-img img-fluid rounded" alt="">
+                            <figcaption class="figure-caption text-center ">market name</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="marketmarket-card border bg-white">
+                    <div class="card-body">
+                        <figure class="figure">
+                            <img src="Apple-logo.png" class="figure-img img-fluid rounded" alt="">
+                            <figcaption class="figure-caption text-center ">market name</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="marketmarket-card border bg-white">
+                    <div class="card-body">
+                        <figure class="figure">
+                            <img src="Apple-logo.png" class="figure-img img-fluid rounded" alt="">
+                            <figcaption class="figure-caption text-center ">market name</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="marketmarket-card border bg-white">
+                    <div class="card-body">
+                        <figure class="figure">
+                            <img src="Apple-logo.png" class="figure-img img-fluid rounded" alt="">
+                            <figcaption class="figure-caption text-center ">market name</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="marketmarket-card border bg-white">
+                    <div class="card-body">
+                        <figure class="figure">
+                            <img src="Apple-logo.png" class="figure-img img-fluid rounded" alt="">
+                            <figcaption class="figure-caption text-center ">market name</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="marketmarket-card border bg-white">
+                    <div class="card-body">
+                        <figure class="figure">
+                            <img src="Apple-logo.png" class="figure-img img-fluid rounded" alt="">
+                            <figcaption class="figure-caption text-center ">market name</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="marketmarket-card border bg-white">
+                    <div class="card-body">
+                        <figure class="figure">
+                            <img src="Apple-logo.png" class="figure-img img-fluid rounded" alt="">
+                            <figcaption class="figure-caption text-center ">market name</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="marketmarket-card border bg-white">
+                    <div class="card-body">
+                        <figure class="figure">
+                            <img src="Apple-logo.png" class="figure-img img-fluid rounded" alt="">
+                            <figcaption class="figure-caption text-center ">market name</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="marketmarket-card border bg-white">
+                    <div class="card-body">
+                        <figure class="figure">
+                            <img src="Apple-logo.png" class="figure-img img-fluid rounded" alt="">
+                            <figcaption class="figure-caption text-center ">market name</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="marketmarket-card border bg-white">
+                    <div class="card-body">
+                        <figure class="figure">
+                            <img src="Apple-logo.png" class="figure-img img-fluid rounded" alt="">
+                            <figcaption class="figure-caption text-center ">market name</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="marketmarket-card border bg-white">
+                    <div class="card-body">
+                        <figure class="figure">
+                            <img src="Apple-logo.png" class="figure-img img-fluid rounded" alt="">
+                            <figcaption class="figure-caption text-center ">market name</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="marketmarket-card border bg-white">
+                    <div class="card-body">
+                        <figure class="figure">
+                            <img src="Apple-logo.png" class="figure-img img-fluid rounded" alt="">
+                            <figcaption class="figure-caption text-center ">market name</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="marketmarket-card border bg-white">
+                    <div class="card-body">
+                        <figure class="figure">
+                            <img src="Apple-logo.png" class="figure-img img-fluid rounded" alt="">
+                            <figcaption class="figure-caption text-center ">market name</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid market-offers">
+                <p class="discovertext"> Top Rated</p>
+
+                <div class="container-fluid ratedcards ">
+
+                    <!--product card start-->
+                    <div class="market-card border bg-white">
+                        <div class="d-flex market-cardtop">
+                            <div class="p-2 mr-auto "><img src="img_avatar.png" alt="Avatar" class="product-avatar">
+                            </div>
+                            <div class="p-2 "><i class='bx bxs-star' style='color:rgba(255,233,46,0.85)'></i> 5.0</div>
+                        </div>
+                        <img class="marketcard-img" src="marketcard.jpg" alt="Card image">
+                        <div class="d-flex ">
+                            <div class="p-2 mr-auto product-mini "><a href="#"><span class="product-name">Polo
+                                        T-Shirt</span></br>
+                                    <span>&#8377 500</span></a>
+                            </div>
+                            <div class="p-2 "><i class='bx bx-bookmark bx-sm'></i></div>
+                        </div>
+                    </div>
+                    <!--product card end-->
+                    <!--product card start-->
+                    <div class="market-card border bg-white">
+                        <div class="d-flex market-cardtop">
+                            <div class="p-2 mr-auto "><img src="img_avatar.png" alt="Avatar" class="product-avatar">
+                            </div>
+                            <div class="p-2 "><i class='bx bxs-star' style='color:rgba(255,233,46,0.85)'></i> 5.0</div>
+                        </div>
+                        <img class="marketcard-img" src="marketcard.jpg" alt="Card image">
+                        <div class="d-flex ">
+                            <div class="p-2 mr-auto product-mini "><a href="#"><span class="product-name">Polo
+                                        T-Shirt</span></br>
+                                    <span>&#8377 500</span></a>
+                            </div>
+                            <div class="p-2 "><i class='bx bx-bookmark bx-sm'></i></div>
+                        </div>
+                    </div>
+                    <!--product card end-->
+                    <!--product card start-->
+                    <div class="market-card border bg-white">
+                        <div class="d-flex market-cardtop">
+                            <div class="p-2 mr-auto "><img src="img_avatar.png" alt="Avatar" class="product-avatar">
+                            </div>
+                            <div class="p-2 "><i class='bx bxs-star' style='color:rgba(255,233,46,0.85)'></i> 5.0</div>
+                        </div>
+                        <img class="marketcard-img" src="marketcard.jpg" alt="Card image">
+                        <div class="d-flex ">
+                            <div class="p-2 mr-auto product-mini "><a href="#"><span class="product-name">Polo
+                                        T-Shirt</span></br>
+                                    <span>&#8377 500</span></a>
+                            </div>
+                            <div class="p-2 "><i class='bx bx-bookmark bx-sm'></i></div>
+                        </div>
+                    </div>
+                    <!--product card end-->
+
+                    <!--product card start-->
+                    <div class="market-card border bg-white">
+                        <div class="d-flex market-cardtop">
+                            <div class="p-2 mr-auto "><img src="img_avatar.png" alt="Avatar" class="product-avatar">
+                            </div>
+                            <div class="p-2 "><i class='bx bxs-star' style='color:rgba(255,233,46,0.85)'></i> 5.0</div>
+                        </div>
+                        <img class="marketcard-img" src="marketcard.jpg" alt="Card image">
+                        <div class="d-flex ">
+                            <div class="p-2 mr-auto product-mini "><a href="#"><span class="product-name">Polo
+                                        T-Shirt</span></br>
+                                    <span>&#8377 500</span></a>
+                            </div>
+                            <div class="p-2 "><i class='bx bx-bookmark bx-sm'></i></div>
+                        </div>
+                    </div>
+                    <!--product card end-->
+                    <!--product card start-->
+                    <div class="market-card border bg-white">
+                        <div class="d-flex market-cardtop">
+                            <div class="p-2 mr-auto "><img src="img_avatar.png" alt="Avatar" class="product-avatar">
+                            </div>
+                            <div class="p-2 "><i class='bx bxs-star' style='color:rgba(255,233,46,0.85)'></i> 5.0</div>
+                        </div>
+                        <img class="marketcard-img" src="marketcard.jpg" alt="Card image">
+                        <div class="d-flex ">
+                            <div class="p-2 mr-auto product-mini "><a href="#"><span class="product-name">Polo
+                                        T-Shirt</span></br>
+                                    <span>&#8377 500</span></a>
+                            </div>
+                            <div class="p-2 "><i class='bx bx-bookmark bx-sm'></i></div>
+                        </div>
+                    </div>
+                    <!--product card end-->
+                    <!--product card start-->
+                    <div class="market-card border bg-white">
+                        <div class="d-flex market-cardtop">
+                            <div class="p-2 mr-auto "><img src="img_avatar.png" alt="Avatar" class="product-avatar">
+                            </div>
+                            <div class="p-2 "><i class='bx bxs-star' style='color:rgba(255,233,46,0.85)'></i> 5.0</div>
+                        </div>
+                        <img class="marketcard-img" src="marketcard.jpg" alt="Card image">
+                        <div class="d-flex ">
+                            <div class="p-2 mr-auto product-mini "><a href="#"><span class="product-name">Polo
+                                        T-Shirt</span></br>
+                                    <span>&#8377 500</span></a>
+                            </div>
+                            <div class="p-2 "><i class='bx bx-bookmark bx-sm'></i></div>
+                        </div>
+                    </div>
+                    <!--product card end-->
+                </div>
+            </div>
+
+            <div class="container-fluid market-offers">
+                <p class="discovertext">On Sale</p>
+
+                <div class="container-fluid ratedcards ">
+
+                    <!--product card start-->
+                    <div class="market-card border bg-white">
+                        <div class="d-flex market-cardtop">
+                            <div class="p-2 mr-auto "><img src="img_avatar.png" alt="Avatar" class="product-avatar">
+                            </div>
+                            <div class="p-2 "><img src="discount.png" alt="Avatar" class="discountproduct-avatar"> 20%
+                            </div>
+                        </div>
+                        <img class="marketcard-img" src="marketcard.jpg" alt="Card image">
+                        <div class="d-flex ">
+                            <div class="p-2 mr-auto product-mini "><a href="#"><span class="product-name">Polo
+                                        T-Shirt</span></br>
+                                    <span>&#8377 500</span></a>
+                            </div>
+                            <div class="p-2 "><i class='bx bx-bookmark bx-sm'></i></div>
+                        </div>
+                    </div>
+                    <!--product card end-->
+                    <!--product card start-->
+                    <div class="market-card border bg-white">
+                        <div class="d-flex market-cardtop">
+                            <div class="p-2 mr-auto "><img src="img_avatar.png" alt="Avatar" class="product-avatar">
+                            </div>
+                            <div class="p-2 "><img src="discount.png" alt="Avatar" class="discountproduct-avatar"> 20%
+                            </div>
+                        </div>
+                        <img class="marketcard-img" src="marketcard.jpg" alt="Card image">
+                        <div class="d-flex ">
+                            <div class="p-2 mr-auto product-mini "><a href="#"><span class="product-name">Polo
+                                        T-Shirt</span></br>
+                                    <span>&#8377 500</span></a>
+                            </div>
+                            <div class="p-2 "><i class='bx bx-bookmark bx-sm'></i></div>
+                        </div>
+                    </div>
+                    <!--product card end-->
+                    <!--product card start-->
+                    <div class="market-card border bg-white">
+                        <div class="d-flex market-cardtop">
+                            <div class="p-2 mr-auto "><img src="img_avatar.png" alt="Avatar" class="product-avatar">
+                            </div>
+                            <div class="p-2 "><img src="discount.png" alt="Avatar" class="discountproduct-avatar"> 20%
+                            </div>
+                        </div>
+                        <img class="marketcard-img" src="marketcard.jpg" alt="Card image">
+                        <div class="d-flex ">
+                            <div class="p-2 mr-auto product-mini "><a href="#"><span class="product-name">Polo
+                                        T-Shirt</span></br>
+                                    <span>&#8377 500</span></a>
+                            </div>
+                            <div class="p-2 "><i class='bx bx-bookmark bx-sm'></i></div>
+                        </div>
+                    </div>
+                    <!--product card end-->
+
+                    <!--product card start-->
+                    <div class="market-card border bg-white">
+                        <div class="d-flex market-cardtop">
+                            <div class="p-2 mr-auto "><img src="img_avatar.png" alt="Avatar" class="product-avatar">
+                            </div>
+                            <div class="p-2 "><img src="discount.png" alt="Avatar" class="discountproduct-avatar"> 20%
+                            </div>
+                        </div>
+                        <img class="marketcard-img" src="marketcard.jpg" alt="Card image">
+                        <div class="d-flex ">
+                            <div class="p-2 mr-auto product-mini "><a href="#"><span class="product-name">Polo
+                                        T-Shirt</span></br>
+                                    <span>&#8377 500</span></a>
+                            </div>
+                            <div class="p-2 "><i class='bx bx-bookmark bx-sm'></i></div>
+                        </div>
+                    </div>
+                    <!--product card end-->
+                    <!--product card start-->
+                    <div class="market-card border bg-white">
+                        <div class="d-flex market-cardtop">
+                            <div class="p-2 mr-auto "><img src="img_avatar.png" alt="Avatar" class="product-avatar">
+                            </div>
+                            <div class="p-2 "><img src="discount.png" alt="Avatar" class="discountproduct-avatar"> 20%
+                            </div>
+                        </div>
+                        <img class="marketcard-img" src="marketcard.jpg" alt="Card image">
+                        <div class="d-flex ">
+                            <div class="p-2 mr-auto product-mini "><a href="#"><span class="product-name">Polo
+                                        T-Shirt</span></br>
+                                    <span>&#8377 500</span></a>
+                            </div>
+                            <div class="p-2 "><i class='bx bx-bookmark bx-sm'></i></div>
+                        </div>
+                    </div>
+                    <!--product card end-->
+                    <!--product card start-->
+                    <div class="market-card border bg-white">
+                        <div class="d-flex market-cardtop">
+                            <div class="p-2 mr-auto "><img src="img_avatar.png" alt="Avatar" class="product-avatar">
+                            </div>
+                            <div class="p-2 "><img src="discount.png" alt="Avatar" class="discountproduct-avatar"> 20%
+                            </div>
+                        </div>
+                        <img class="marketcard-img" src="marketcard.jpg" alt="Card image">
+                        <div class="d-flex ">
+                            <div class="p-2 mr-auto product-mini "><a href="#"><span class="product-name">Polo
+                                        T-Shirt</span></br>
+                                    <span>&#8377 500</span></a>
+                            </div>
+                            <div class="p-2 "><i class='bx bx-bookmark bx-sm'></i></div>
+                        </div>
+                    </div>
+                    <!--product card end-->
+                </div>
+            </div>
+
+            <p class="discovertext">&nbsp; All Product</p>
+            <!--market bottom start-->
+            <div class=" d-flex flex-wrap justify-content-center  ">
+
+                <!--product card start-->
+                <div class="market-bottom-card border bg-white">
+                    <div class="d-flex market-cardtop">
+                        <div class="p-2 mr-auto "><img src="img_avatar.png" alt="Avatar" class="product-avatar">
+                            &nbsp;&nbsp;Username</div>
+
+                    </div>
+                    <img class="market-bottom-card-img" src="marketcard.jpg" alt="Card image">
+                    <div class="d-flex ">
+                        <div class="p-2 mr-auto product-mini "><a href="#"><span class="product-name">Polo
+                                    T-Shirt</span></br>
+                                <span>&#8377 500</span></a>
+                        </div>
+                        <div class="p-2 "><i class='bx bx-bookmark bx-sm'></i></div>
+                    </div>
+                </div>
+                <!--product card end-->
+                <!--product card start-->
+                <div class="market-bottom-card border bg-white">
+                    <div class="d-flex market-cardtop">
+                        <div class="p-2 mr-auto "><img src="img_avatar.png" alt="Avatar"
+                                class="product-avatar">&nbsp;&nbsp;Username</div>
+
+                    </div>
+                    <img class="market-bottom-card-img" src="marketcard.jpg" alt="Card image">
+                    <div class="d-flex ">
+                        <div class="p-2 mr-auto product-mini "><a href="#"><span class="product-name">Polo
+                                    T-Shirt</span></br>
+                                <span>&#8377 500</span></a>
+                        </div>
+                        <div class="p-2 "><i class='bx bx-bookmark bx-sm'></i></div>
+                    </div>
+                </div>
+                <!--product card end-->
+                <!--product card start-->
+                <div class="market-bottom-card border bg-white">
+                    <div class="d-flex market-cardtop">
+                        <div class="p-2 mr-auto "><img src="img_avatar.png" alt="Avatar"
+                                class="product-avatar">&nbsp;&nbsp;Username</div>
+
+                    </div>
+                    <img class="market-bottom-card-img" src="marketcard.jpg" alt="Card image">
+                    <div class="d-flex ">
+                        <div class="p-2 mr-auto product-mini "><a href="#"><span class="product-name">Polo
+                                    T-Shirt</span></br>
+                                <span>&#8377 500</span></a>
+                        </div>
+                        <div class="p-2 "><i class='bx bx-bookmark bx-sm'></i></div>
+                    </div>
+                </div>
+                <!--product card end-->
+                <!--product card start-->
+                <div class="market-bottom-card border bg-white">
+                    <div class="d-flex market-cardtop">
+                        <div class="p-2 mr-auto "><img src="img_avatar.png" alt="Avatar" class="product-avatar">
+                            &nbsp;&nbsp;Username</div>
+
+                    </div>
+                    <img class="market-bottom-card-img" src="marketcard.jpg" alt="Card image">
+                    <div class="d-flex ">
+                        <div class="p-2 mr-auto product-mini "><a href="#"><span class="product-name">Polo
+                                    T-Shirt</span></br>
+                                <span>&#8377 500</span></a>
+                        </div>
+                        <div class="p-2 "><i class='bx bx-bookmark bx-sm'></i></div>
+                    </div>
+                </div>
+                <!--product card end-->
+                <!--product card start-->
+                <div class="market-bottom-card border bg-white">
+                    <div class="d-flex market-cardtop">
+                        <div class="p-2 mr-auto "><img src="img_avatar.png" alt="Avatar"
+                                class="product-avatar">&nbsp;&nbsp;Username</div>
+
+                    </div>
+                    <img class="market-bottom-card-img" src="marketcard.jpg" alt="Card image">
+                    <div class="d-flex ">
+                        <div class="p-2 mr-auto product-mini "><a href="#"><span class="product-name">Polo
+                                    T-Shirt</span></br>
+                                <span>&#8377 500</span></a>
+                        </div>
+                        <div class="p-2 "><i class='bx bx-bookmark bx-sm'></i></div>
+                    </div>
+                </div>
+                <!--product card end-->
+                <!--product card start-->
+                <div class="market-bottom-card border bg-white">
+                    <div class="d-flex market-cardtop">
+                        <div class="p-2 mr-auto "><img src="img_avatar.png" alt="Avatar"
+                                class="product-avatar">&nbsp;&nbsp;Username</div>
+
+                    </div>
+                    <img class="market-bottom-card-img" src="marketcard.jpg" alt="Card image">
+                    <div class="d-flex ">
+                        <div class="p-2 mr-auto product-mini "><a href="#"><span class="product-name">Polo
+                                    T-Shirt</span></br>
+                                <span>&#8377 500</span></a>
+                        </div>
+                        <div class="p-2 "><i class='bx bx-bookmark bx-sm'></i></div>
+                    </div>
+                </div>
+                <!--product card end-->
+                <!--product card start-->
+                <div class="market-bottom-card border bg-white">
+                    <div class="d-flex market-cardtop">
+                        <div class="p-2 mr-auto "><img src="img_avatar.png" alt="Avatar"
+                                class="product-avatar">&nbsp;&nbsp;Username</div>
+
+                    </div>
+                    <img class="market-bottom-card-img" src="marketcard.jpg" alt="Card image">
+                    <div class="d-flex ">
+                        <div class="p-2 mr-auto product-mini "><a href="#"><span class="product-name">Polo
+                                    T-Shirt</span></br>
+                                <span>&#8377 500</span></a>
+                        </div>
+                        <div class="p-2 "><i class='bx bx-bookmark bx-sm'></i></div>
+                    </div>
+                </div>
+                <!--product card end-->
+                <!--product card start-->
+                <div class="market-bottom-card border bg-white">
+                    <div class="d-flex market-cardtop">
+                        <div class="p-2 mr-auto "><img src="img_avatar.png" alt="Avatar"
+                                class="product-avatar">&nbsp;&nbsp;Username</div>
+
+                    </div>
+                    <img class="market-bottom-card-img" src="marketcard.jpg" alt="Card image">
+                    <div class="d-flex ">
+                        <div class="p-2 mr-auto product-mini "><a href="#"><span class="product-name">Polo
+                                    T-Shirt</span></br>
+                                <span>&#8377 500</span></a>
+                        </div>
+                        <div class="p-2 "><i class='bx bx-bookmark bx-sm'></i></div>
+                    </div>
+                </div>
+                <!--product card end-->
+            </div>
+            <!--market bottom end-->
         </div>
         <div class="tab-pane container fade" id="recent">
+            <!--market bottom start-->
+            <div class=" d-flex flex-wrap justify-content-center prod-card ">
 
-            hiiii
+                <!--product card start-->
+                <div class="market-bottom-card border bg-white">
+                    <div class="d-flex market-cardtop">
+                        <div class="p-2 mr-auto "><img src="img_avatar.png" alt="Avatar" class="product-avatar">
+                            &nbsp;&nbsp;Username</div>
+
+                    </div>
+                    <img class="market-bottom-card-img" src="marketcard.jpg" alt="Card image">
+                    <div class="d-flex ">
+                        <div class="p-2 mr-auto product-mini "><a href="#"><span class="product-name">Polo
+                                    T-Shirt</span></br>
+                                <span>&#8377 500</span></a>
+                        </div>
+                        <div class="p-2 "><i class='bx bx-bookmark bx-sm'></i></div>
+                    </div>
+                </div>
+                <!--product card end-->
+                <!--product card start-->
+                <div class="market-bottom-card border bg-white">
+                    <div class="d-flex market-cardtop">
+                        <div class="p-2 mr-auto "><img src="img_avatar.png" alt="Avatar"
+                                class="product-avatar">&nbsp;&nbsp;Username</div>
+
+                    </div>
+                    <img class="market-bottom-card-img" src="marketcard.jpg" alt="Card image">
+                    <div class="d-flex ">
+                        <div class="p-2 mr-auto product-mini "><a href="#"><span class="product-name">Polo
+                                    T-Shirt</span></br>
+                                <span>&#8377 500</span></a>
+                        </div>
+                        <div class="p-2 "><i class='bx bx-bookmark bx-sm'></i></div>
+                    </div>
+                </div>
+                <!--product card end-->
+                <!--product card start-->
+                <div class="market-bottom-card border bg-white">
+                    <div class="d-flex market-cardtop">
+                        <div class="p-2 mr-auto "><img src="img_avatar.png" alt="Avatar"
+                                class="product-avatar">&nbsp;&nbsp;Username</div>
+
+                    </div>
+                    <img class="market-bottom-card-img" src="marketcard.jpg" alt="Card image">
+                    <div class="d-flex ">
+                        <div class="p-2 mr-auto product-mini "><a href="#"><span class="product-name">Polo
+                                    T-Shirt</span></br>
+                                <span>&#8377 500</span></a>
+                        </div>
+                        <div class="p-2 "><i class='bx bx-bookmark bx-sm'></i></div>
+                    </div>
+                </div>
+                <!--product card end-->
+                <!--product card start-->
+                <div class="market-bottom-card border bg-white">
+                    <div class="d-flex market-cardtop">
+                        <div class="p-2 mr-auto "><img src="img_avatar.png" alt="Avatar" class="product-avatar">
+                            &nbsp;&nbsp;Username</div>
+
+                    </div>
+                    <img class="market-bottom-card-img" src="marketcard.jpg" alt="Card image">
+                    <div class="d-flex ">
+                        <div class="p-2 mr-auto product-mini "><a href="#"><span class="product-name">Polo
+                                    T-Shirt</span></br>
+                                <span>&#8377 500</span></a>
+                        </div>
+                        <div class="p-2 "><i class='bx bx-bookmark bx-sm'></i></div>
+                    </div>
+                </div>
+                <!--product card end-->
+                <!--product card start-->
+                <div class="market-bottom-card border bg-white">
+                    <div class="d-flex market-cardtop">
+                        <div class="p-2 mr-auto "><img src="img_avatar.png" alt="Avatar"
+                                class="product-avatar">&nbsp;&nbsp;Username</div>
+
+                    </div>
+                    <img class="market-bottom-card-img" src="marketcard.jpg" alt="Card image">
+                    <div class="d-flex ">
+                        <div class="p-2 mr-auto product-mini "><a href="#"><span class="product-name">Polo
+                                    T-Shirt</span></br>
+                                <span>&#8377 500</span></a>
+                        </div>
+                        <div class="p-2 "><i class='bx bx-bookmark bx-sm'></i></div>
+                    </div>
+                </div>
+                <!--product card end-->
+                <!--product card start-->
+                <div class="market-bottom-card border bg-white">
+                    <div class="d-flex market-cardtop">
+                        <div class="p-2 mr-auto "><img src="img_avatar.png" alt="Avatar"
+                                class="product-avatar">&nbsp;&nbsp;Username</div>
+
+                    </div>
+                    <img class="market-bottom-card-img" src="marketcard.jpg" alt="Card image">
+                    <div class="d-flex ">
+                        <div class="p-2 mr-auto product-mini "><a href="#"><span class="product-name">Polo
+                                    T-Shirt</span></br>
+                                <span>&#8377 500</span></a>
+                        </div>
+                        <div class="p-2 "><i class='bx bx-bookmark bx-sm'></i></div>
+                    </div>
+                </div>
+                <!--product card end-->
+                <!--product card start-->
+                <div class="market-bottom-card border bg-white">
+                    <div class="d-flex market-cardtop">
+                        <div class="p-2 mr-auto "><img src="img_avatar.png" alt="Avatar"
+                                class="product-avatar">&nbsp;&nbsp;Username</div>
+
+                    </div>
+                    <img class="market-bottom-card-img" src="marketcard.jpg" alt="Card image">
+                    <div class="d-flex ">
+                        <div class="p-2 mr-auto product-mini "><a href="#"><span class="product-name">Polo
+                                    T-Shirt</span></br>
+                                <span>&#8377 500</span></a>
+                        </div>
+                        <div class="p-2 "><i class='bx bx-bookmark bx-sm'></i></div>
+                    </div>
+                </div>
+                <!--product card end-->
+                <!--product card start-->
+                <div class="market-bottom-card border bg-white">
+                    <div class="d-flex market-cardtop">
+                        <div class="p-2 mr-auto "><img src="img_avatar.png" alt="Avatar"
+                                class="product-avatar">&nbsp;&nbsp;Username</div>
+
+                    </div>
+                    <img class="market-bottom-card-img" src="marketcard.jpg" alt="Card image">
+                    <div class="d-flex ">
+                        <div class="p-2 mr-auto product-mini "><a href="#"><span class="product-name">Polo
+                                    T-Shirt</span></br>
+                                <span>&#8377 500</span></a>
+                        </div>
+                        <div class="p-2 "><i class='bx bx-bookmark bx-sm'></i></div>
+                    </div>
+                </div>
+                <!--product card end-->
+            </div>
+            <!--market bottom end-->
         </div>
         <div class="tab-pane container fade" id="popular">
 
-            hiiii
+            <!--market bottom start-->
+            <div class=" d-flex flex-wrap justify-content-center prod-card ">
+
+                <!--product card start-->
+                <div class="market-bottom-card border bg-white">
+                    <div class="d-flex market-cardtop">
+                        <div class="p-2 mr-auto "><img src="img_avatar.png" alt="Avatar" class="product-avatar">
+                            &nbsp;&nbsp;Username</div>
+
+                    </div>
+                    <img class="market-bottom-card-img" src="marketcard.jpg" alt="Card image">
+                    <div class="d-flex ">
+                        <div class="p-2 mr-auto product-mini "><a href="#"><span class="product-name">Polo
+                                    T-Shirt</span></br>
+                                <span>&#8377 500</span></a>
+                        </div>
+                        <div class="p-2 "><i class='bx bx-bookmark bx-sm'></i></div>
+                    </div>
+                </div>
+                <!--product card end-->
+                <!--product card start-->
+                <div class="market-bottom-card border bg-white">
+                    <div class="d-flex market-cardtop">
+                        <div class="p-2 mr-auto "><img src="img_avatar.png" alt="Avatar"
+                                class="product-avatar">&nbsp;&nbsp;Username</div>
+
+                    </div>
+                    <img class="market-bottom-card-img" src="marketcard.jpg" alt="Card image">
+                    <div class="d-flex ">
+                        <div class="p-2 mr-auto product-mini "><a href="#"><span class="product-name">Polo
+                                    T-Shirt</span></br>
+                                <span>&#8377 500</span></a>
+                        </div>
+                        <div class="p-2 "><i class='bx bx-bookmark bx-sm'></i></div>
+                    </div>
+                </div>
+                <!--product card end-->
+                <!--product card start-->
+                <div class="market-bottom-card border bg-white">
+                    <div class="d-flex market-cardtop">
+                        <div class="p-2 mr-auto "><img src="img_avatar.png" alt="Avatar"
+                                class="product-avatar">&nbsp;&nbsp;Username</div>
+
+                    </div>
+                    <img class="market-bottom-card-img" src="marketcard.jpg" alt="Card image">
+                    <div class="d-flex ">
+                        <div class="p-2 mr-auto product-mini "><a href="#"><span class="product-name">Polo
+                                    T-Shirt</span></br>
+                                <span>&#8377 500</span></a>
+                        </div>
+                        <div class="p-2 "><i class='bx bx-bookmark bx-sm'></i></div>
+                    </div>
+                </div>
+                <!--product card end-->
+                <!--product card start-->
+                <div class="market-bottom-card border bg-white">
+                    <div class="d-flex market-cardtop">
+                        <div class="p-2 mr-auto "><img src="img_avatar.png" alt="Avatar" class="product-avatar">
+                            &nbsp;&nbsp;Username</div>
+
+                    </div>
+                    <img class="market-bottom-card-img" src="marketcard.jpg" alt="Card image">
+                    <div class="d-flex ">
+                        <div class="p-2 mr-auto product-mini "><a href="#"><span class="product-name">Polo
+                                    T-Shirt</span></br>
+                                <span>&#8377 500</span></a>
+                        </div>
+                        <div class="p-2 "><i class='bx bx-bookmark bx-sm'></i></div>
+                    </div>
+                </div>
+                <!--product card end-->
+                <!--product card start-->
+                <div class="market-bottom-card border bg-white">
+                    <div class="d-flex market-cardtop">
+                        <div class="p-2 mr-auto "><img src="img_avatar.png" alt="Avatar"
+                                class="product-avatar">&nbsp;&nbsp;Username</div>
+
+                    </div>
+                    <img class="market-bottom-card-img" src="marketcard.jpg" alt="Card image">
+                    <div class="d-flex ">
+                        <div class="p-2 mr-auto product-mini "><a href="#"><span class="product-name">Polo
+                                    T-Shirt</span></br>
+                                <span>&#8377 500</span></a>
+                        </div>
+                        <div class="p-2 "><i class='bx bx-bookmark bx-sm'></i></div>
+                    </div>
+                </div>
+                <!--product card end-->
+                <!--product card start-->
+                <div class="market-bottom-card border bg-white">
+                    <div class="d-flex market-cardtop">
+                        <div class="p-2 mr-auto "><img src="img_avatar.png" alt="Avatar"
+                                class="product-avatar">&nbsp;&nbsp;Username</div>
+
+                    </div>
+                    <img class="market-bottom-card-img" src="marketcard.jpg" alt="Card image">
+                    <div class="d-flex ">
+                        <div class="p-2 mr-auto product-mini "><a href="#"><span class="product-name">Polo
+                                    T-Shirt</span></br>
+                                <span>&#8377 500</span></a>
+                        </div>
+                        <div class="p-2 "><i class='bx bx-bookmark bx-sm'></i></div>
+                    </div>
+                </div>
+                <!--product card end-->
+                <!--product card start-->
+                <div class="market-bottom-card border bg-white">
+                    <div class="d-flex market-cardtop">
+                        <div class="p-2 mr-auto "><img src="img_avatar.png" alt="Avatar"
+                                class="product-avatar">&nbsp;&nbsp;Username</div>
+
+                    </div>
+                    <img class="market-bottom-card-img" src="marketcard.jpg" alt="Card image">
+                    <div class="d-flex ">
+                        <div class="p-2 mr-auto product-mini "><a href="#"><span class="product-name">Polo
+                                    T-Shirt</span></br>
+                                <span>&#8377 500</span></a>
+                        </div>
+                        <div class="p-2 "><i class='bx bx-bookmark bx-sm'></i></div>
+                    </div>
+                </div>
+                <!--product card end-->
+                <!--product card start-->
+                <div class="market-bottom-card border bg-white">
+                    <div class="d-flex market-cardtop">
+                        <div class="p-2 mr-auto "><img src="img_avatar.png" alt="Avatar"
+                                class="product-avatar">&nbsp;&nbsp;Username</div>
+
+                    </div>
+                    <img class="market-bottom-card-img" src="marketcard.jpg" alt="Card image">
+                    <div class="d-flex ">
+                        <div class="p-2 mr-auto product-mini "><a href="#"><span class="product-name">Polo
+                                    T-Shirt</span></br>
+                                <span>&#8377 500</span></a>
+                        </div>
+                        <div class="p-2 "><i class='bx bx-bookmark bx-sm'></i></div>
+                    </div>
+                </div>
+                <!--product card end-->
+            </div>
+            <!--market bottom end-->
         </div>
 
     </div>
+
+
+
+
+    <!-- MOBILE NAV -->
+    <div class="mb-nav">
+
+        <div class="mb-nav-item ">
+            <a href="index.html">
+                <i class='bx bx-home bx-sm bx-tada-hover'></i>
+            </a>
+        </div>
+        <div class="mb-nav-item active">
+            <a href="#">
+                <i class='bx bx-shopping-bag bx-tada-hover bx-sm'></i>
+            </a>
+        </div>
+        <div class="mb-nav-item">
+            <a href="#">
+                <i class='bx bxs-plus-square bx-tada-hover bx-md' style='color:#7149ff'></i>
+            </a>
+        </div>
+
+        <div class="mb-nav-item">
+            <a href="#">
+                <i class='bx bx-heart bx-tada-hover bx-sm'></i>
+            </a>
+        </div>
+        <div class="mb-nav-item">
+            <a href="#">
+                <img src="img_avatar2.png" alt="Avatar" class="mb-nav-avatar">
+        </div>
+        </a>
+    </div>
+
+
+
+
 
 
 
