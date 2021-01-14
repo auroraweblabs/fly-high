@@ -183,7 +183,7 @@ span {
 }
 
 #sidebar ul.components {
-  padding: 20px 0;
+  padding: 5px 0;
   border-bottom: 1px solid #47748b;
 }
 
@@ -365,7 +365,7 @@ a.article:hover {
 .postcard {
   background-color: white;
   border-radius: 30px;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
   max-width: 350px;
   
   
@@ -540,6 +540,7 @@ a.article:hover {
       border-top-left-radius: 20px;
           border-top-right-radius: 20px;
     color: black;
+    margin-bottom: -2px;
            
       box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     }
@@ -612,8 +613,8 @@ a.article:hover {
 }
 @media only screen and (max-width: 600px) {  
   .modal{
-    margin-top: 310px;
-    width: 380px;
+    margin-top: 350px;
+    width: 450px;
     margin-left: -10px;}
 
   }
