@@ -613,7 +613,7 @@ a.article:hover {
 }
 @media only screen and (max-width: 600px) {  
   .modal{
-    margin-top: 350px;
+    margin-top: 340px;
     width: 450px;
     margin-left: -10px;}
 
