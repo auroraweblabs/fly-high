@@ -14,6 +14,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
 
 
 
@@ -128,7 +129,7 @@
 
 
                     <ul class="nav  ml-auto">
-                        <a class="nav-link" href="#"><i class='bx bx-search-alt-2 bx-sm'></i></a>
+                        <a href="search.html" class="nav-link" href="#"><i class='bx bx-search-alt-2 bx-sm'></i></a>
 
                     </ul>
 
@@ -1281,35 +1282,27 @@
 
 
     <!-- MOBILE NAV -->
-    <div class="mb-nav">
-
-        <div class="mb-nav-item active">
-            <a href="index.html">
-                <i class='bx bx-home bx-sm bx-tada-hover'></i>
-            </a>
+    <div class="bottom-navbar">
+        <div class="con-effect">
+            <div class="effect"></div>
         </div>
-        <div class="mb-nav-item">
-            <a href="marketplace.html">
-                <i class='bx bx-shopping-bag bx-tada-hover bx-sm'></i>
-            </a>
-        </div>
-        <div class="mb-nav-item">
-            <a href="#">
-                <i class='bx bxs-plus-square bx-tada-hover bx-md' style='color:#7149ff'></i>
-            </a>
-        </div>
-
-        <div class="mb-nav-item">
-            <a href="#">
-                <i class='bx bx-heart bx-tada-hover bx-sm'></i>
-            </a>
-        </div>
-        <div class="mb-nav-item">
-            <a href="#">
-                <img src="img_avatar2.png" alt="Avatar" class="mb-nav-avatar">
-            </a>
-        </div>
-        
+        <button class="active bottom-navbtn">
+            <a href="index.html"><i class='bx bx-home bx-tada-hover '></i></a> 
+            
+        </button>
+        <button class="bottom-navbtn">
+            <a href="marketplace.html"><i class='bx bx-shopping-bag bx-tada-hover'></i></a>
+        </button>
+        <button
+            class="float bottom-navbtn">
+           <a href="uploadpost.html"><i class='bx bx-plus' ></i></a> 
+        </button>
+        <button class="bottom-navbtn">
+            <a href="notification.html"><i class='bx bx-heart bx-tada-hover '></i></a>
+        </button>
+        <button class="bottom-navbtn">
+            <a href="profile.html"><i class='bx bx-user bx-tada-hover' ></i></a>
+        </button>
     </div>
     
     <!-- END MOBILE NAV -->
@@ -1343,6 +1336,90 @@
             }
         }
     </script>
+    <script>
+        const buttons = document.querySelectorAll('.bottom-navbar button:not(.float)')
+        const effect = document.querySelector('.effect')
+        console.log(effect)
+        const container = document.querySelector('.container')
+        let y = 0
+        let moveY = 0
+        let open = false
+    
+        const vh = window.innerHeight * 0.01
+        document.documentElement.style.setProperty('--vh', `${vh}px`)
+        setTimeout(function () {
+          window.scrollTo(0, 1)
+        }, 0)
+        
+        window.addEventListener('touchstart', (evt) => {
+            const area = window.innerHeight - evt.touches[0].clientY
+            y = area
+            console.log(y)
+        })
+    
+        window.addEventListener('touchend', (evt) => {
+            y = 0
+            console.log(moveY)
+            if (moveY > (window.innerHeight / 4)) {
+                anime({
+                    targets: '.container',
+                    translateY: `-${window.innerHeight / 2}px`,
+                    duration: 600,
+                })
+                open = true
+            } else {
+                anime({
+                    targets: '.container',
+                    translateY: `0px`,
+                    duration: 600,
+                    easing: 'easeOutExpo'
+                })
+                open = false
+            }
+        })
+    
+        window.addEventListener('touchmove', (evt) => {
+            moveY = (window.innerHeight - y) - evt.touches[0].clientY
+            console.log(y)
+            if (!open) {
+                anime({
+                    targets: '.container',
+                    translateY: `${moveY <= window.innerHeight / 2 ? moveY > 0 ? -moveY : 0 : -window.innerHeight / 2}px`,
+                    duration: 200,
+                })
+            } else if (open) {
+                moveY = moveY + window.innerHeight / 2
+                anime({
+                    targets: '.container',
+                    translateY: `${moveY <= window.innerHeight / 2 ? moveY > 0 ? -moveY : 0 : -window.innerHeight / 2}px`,
+                    duration: 200,
+                })
+            }
+        })
+    
+        buttons.forEach((item) => {
+            item.addEventListener('click', (evt) => {
+                const x = evt.target.offsetLeft
+                buttons.forEach((btn) => { btn.classList.remove('active') })
+                evt.target.classList.add('active')
+                anime({
+                    targets: '.effect',
+                    left: `${x}px`,
+                    duration: 600,
+                })
+            })
+        })
+    
+        function handleClickPlus(evt) {
+            anime({
+                targets: '.container',
+                translateY: `-${window.innerHeight / 2}px`,
+                duration: 600,
+            })
+            open = true
+            y = window.innerHeight / 2
+            moveY = moveY + window.innerHeight / 2
+        } </script>
 
 
 
