@@ -648,4 +648,60 @@ a.article:hover {
   font-weight: bold;
 }
 
+.market-ad {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.market-ad-card {
+  border-radius: 20px;
+  margin-right: 90px;
+  margin-left: 90px;
+}
+
+.market-top-image {
+  height: 250px;
+  width: auto;
+  
+}
+.marketcardtxt{
+  margin-left: 90px ;
+  margin-top: 50px;
+}
+.btn-ad{
+  margin-right: 200px;
+margin-top: -20px;
+background-color: #ff9494;
+border-radius: 20px;
+color: white;
+font-weight: bold;
+font-size: 17px;
+
+}
+
+
+@media only screen and (max-width: 600px) {
+  .market-ad-card {
+
+      margin-right: 0%;
+      margin-left: 0%;
+  }
+
+  .market-top-image {
+      height: 150px;
+      width: auto;
+      margin-left: -15px;
+  }
+  .marketcardtxt{
+      margin-left: 0%;
+      margin-top: 0%;
+      
+  }
+  .btn-ad{
+  margin-right: 20px;
+margin-top: -20px;
+background-color: #ff9494;
+}
+
+
 
