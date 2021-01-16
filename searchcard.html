@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Notifications</title>
+    <title>Search</title>
 
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -38,6 +38,26 @@
 
         }
 
+        .searchimg {
+            height: 300px;
+            border-radius: 10px;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .searchimg {
+                height: 158px;
+                border-radius: 10px;
+            }
+        }
+
+        .searchusercard {
+            margin: 5px;
+        }
+
+        .search-page {
+            margin: 5px;
+            margin-top: 10px;
+        }
     </style>
 
 
@@ -48,7 +68,7 @@
         <!-- Sidebar  -->
         <nav id="sidebar">
             <div class="sidebar-header">
-                <div class="d-flex justify-content-around">
+                <div class="d-flex  justify-content-around">
 
                     <img src="img_avatar.png" alt="Avatar" class="sidebaravatar">
 
@@ -140,11 +160,17 @@
                 <a href="index.html">
                     <div class="p-2 "><i class='bx bxs-chevron-left bx-sm'></i></div>
                 </a>
-                <div class="p-2 marketplace-title">Notifications</div>
+                <div class="p-2 marketplace-tite"></div>
                 <div class="p-2 ">
-                    <i class='bx bx-search-alt-2'></i>
-                    <i class='bx bx-bookmark'></i>
-
+                    <form action="searchcard.html">
+                        <div class="input-group searchbar">
+                            <input type="text" class="form-control" placeholder="Search">
+                            <div class="input-group-append">
+                                <button class="btn btn-secondary searchbtn" type="submit">
+                                    <i class='bx bx-search-alt-2'></i>
+                                </button>
+                            </div>
+                    </form>
                 </div>
 
 
@@ -152,32 +178,152 @@
 
 
         </div>
+
+        <div class="d-flex flex-wrap justify-content-around search-container">
+            <!--search card start-->
+            <div class="searchusercard bg-white border">
+                <div class="d-flex ">
+                    <div class="p-2 "><img src="img_avatar.png" alt="Avatar" class="searchusercardavatar"></div>
+                    <div class="p-2 "><span class="search-username">username</span></br>
+                        <span class="search-following">Following</span>
+                    </div>
+                    <div class="p-2 ml-auto "><button class="btn btn-sm searchusercard-btn"><i
+                                class='bx bxs-chevron-right bx-sm'></i></button>
+                    </div>
+                </div>
+            </div>
+            <!--search card end-->
+            <!--search card start-->
+            <div class="searchusercard bg-white border">
+                <div class="d-flex ">
+                    <div class="p-2 "><img src="img_avatar.png" alt="Avatar" class="searchusercardavatar"></div>
+                    <div class="p-2 "><span class="search-username">username</span></br>
+                        <span class="search-following">Following</span>
+                    </div>
+                    <div class="p-2 ml-auto "><button class="btn btn-sm searchusercard-btn"><i
+                                class='bx bxs-chevron-right bx-sm'></i></button>
+                    </div>
+                </div>
+            </div>
+            <!--search card end-->
+            <!--search card start-->
+            <div class="searchusercard bg-white border">
+                <div class="d-flex ">
+                    <div class="p-2 "><img src="img_avatar.png" alt="Avatar" class="searchusercardavatar"></div>
+                    <div class="p-2 "><span class="search-username">username</span></br>
+                        <span class="search-following">Following</span>
+                    </div>
+                    <div class="p-2 ml-auto "><button class="btn btn-sm searchusercard-btn"><i
+                                class='bx bxs-chevron-right bx-sm'></i></button>
+                    </div>
+                </div>
+            </div>
+            <!--search card end-->
+            <!--search card start-->
+            <div class="searchusercard bg-white border">
+                <div class="d-flex ">
+                    <div class="p-2 "><img src="img_avatar.png" alt="Avatar" class="searchusercardavatar"></div>
+                    <div class="p-2 "><span class="search-username">username</span></br>
+                        <span class="search-following">Following</span>
+                    </div>
+                    <div class="p-2 ml-auto "><button class="btn btn-sm searchusercard-btn"><i
+                                class='bx bxs-chevron-right bx-sm'></i></button>
+                    </div>
+                </div>
+            </div>
+            <!--search card end-->
+             <!--search card start-->
+             <div class="searchusercard bg-white border">
+                <div class="d-flex ">
+                    <div class="p-2 "><img src="img_avatar.png" alt="Avatar" class="searchusercardavatar"></div>
+                    <div class="p-2 "><span class="search-username">username</span></br>
+                        <span class="search-following">Following</span>
+                    </div>
+                    <div class="p-2 ml-auto "><button class="btn btn-sm searchusercard-btn"><i
+                                class='bx bxs-chevron-right bx-sm'></i></button>
+                    </div>
+                </div>
+            </div>
+            <!--search card end-->
+             <!--search card start-->
+             <div class="searchusercard bg-white border">
+                <div class="d-flex ">
+                    <div class="p-2 "><img src="img_avatar.png" alt="Avatar" class="searchusercardavatar"></div>
+                    <div class="p-2 "><span class="search-username">username</span></br>
+                        <span class="search-following">Following</span>
+                    </div>
+                    <div class="p-2 ml-auto "><button class="btn btn-sm searchusercard-btn"><i
+                                class='bx bxs-chevron-right bx-sm'></i></button>
+                    </div>
+                </div>
+            </div>
+            <!--search card end-->
+             <!--search card start-->
+             <div class="searchusercard bg-white border">
+                <div class="d-flex ">
+                    <div class="p-2 "><img src="img_avatar.png" alt="Avatar" class="searchusercardavatar"></div>
+                    <div class="p-2 "><span class="search-username">username</span></br>
+                        <span class="search-following">Following</span>
+                    </div>
+                    <div class="p-2 ml-auto "><button class="btn btn-sm searchusercard-btn"><i
+                                class='bx bxs-chevron-right bx-sm'></i></button>
+                    </div>
+                </div>
+            </div>
+            <!--search card end-->
+             <!--search card start-->
+             <div class="searchusercard bg-white border">
+                <div class="d-flex ">
+                    <div class="p-2 "><img src="img_avatar.png" alt="Avatar" class="searchusercardavatar"></div>
+                    <div class="p-2 "><span class="search-username">username</span></br>
+                        <span class="search-following">Following</span>
+                    </div>
+                    <div class="p-2 ml-auto "><button class="btn btn-sm searchusercard-btn"><i
+                                class='bx bxs-chevron-right bx-sm'></i></button>
+                    </div>
+                </div>
+            </div>
+            <!--search card end-->
+             <!--search card start-->
+             <div class="searchusercard bg-white border">
+                <div class="d-flex ">
+                    <div class="p-2 "><img src="img_avatar.png" alt="Avatar" class="searchusercardavatar"></div>
+                    <div class="p-2 "><span class="search-username">username</span></br>
+                        <span class="search-following">Following</span>
+                    </div>
+                    <div class="p-2 ml-auto "><button class="btn btn-sm searchusercard-btn"><i
+                                class='bx bxs-chevron-right bx-sm'></i></button>
+                    </div>
+                </div>
+            </div>
+            <!--search card end-->
+        </div>
+    </div>
     </div>
 
 
 
     <!-- MOBILE NAV -->
     <div class="bottom-navbar">
-        
-        <button class=" bottom-navbtn">
-            <a href="index.html"><i class='bx bx-home bx-tada-hover '></i></a> 
-            
+
+        <button class="bottom-navbtn">
+            <a href="index.html"><i class='bx bx-home bx-tada-hover '></i></a>
+
         </button>
         <button class="bottom-navbtn">
             <a href="marketplace.html"><i class='bx bx-shopping-bag bx-tada-hover'></i></a>
         </button>
-        <button
-            class="float bottom-navbtn">
-           <a href="uploadpost.html"><i class='bx bx-plus' ></i></a> 
-        </button>
-        <button class=" active bottom-navbtn">
-            <a href="notification.html "><i class='bx bx-heart bx-tada-hover '></i></a>
+        <button class="float bottom-navbtn">
+            <a href="uploadpost.html"><i class='bx bx-plus'></i></a>
         </button>
         <button class="bottom-navbtn">
-            <a href="profile.html"><i class='bx bx-user bx-tada-hover' ></i></a>
+            <a href="notification.html"><i class='bx bx-heart bx-tada-hover '></i></a>
+        </button>
+        <button class="bottom-navbtn">
+            <a href="profile.html"><i class='bx bx-user bx-tada-hover'></i></a>
         </button>
     </div>
-    
+
     <!-- END MOBILE NAV -->
 
 
@@ -200,19 +346,19 @@
         let y = 0
         let moveY = 0
         let open = false
-    
+
         const vh = window.innerHeight * 0.01
         document.documentElement.style.setProperty('--vh', `${vh}px`)
         setTimeout(function () {
-          window.scrollTo(0, 1)
+            window.scrollTo(0, 1)
         }, 0)
-        
+
         window.addEventListener('touchstart', (evt) => {
             const area = window.innerHeight - evt.touches[0].clientY
             y = area
             console.log(y)
         })
-    
+
         window.addEventListener('touchend', (evt) => {
             y = 0
             console.log(moveY)
@@ -233,7 +379,7 @@
                 open = false
             }
         })
-    
+
         window.addEventListener('touchmove', (evt) => {
             moveY = (window.innerHeight - y) - evt.touches[0].clientY
             console.log(y)
@@ -252,7 +398,7 @@
                 })
             }
         })
-    
+
         buttons.forEach((item) => {
             item.addEventListener('click', (evt) => {
                 const x = evt.target.offsetLeft
@@ -265,7 +411,7 @@
                 })
             })
         })
-    
+
         function handleClickPlus(evt) {
             anime({
                 targets: '.container',
@@ -287,4 +433,5 @@
 
 
 </body>
+
 </html>

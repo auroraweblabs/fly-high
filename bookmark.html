@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Notifications</title>
+    <title>Search</title>
 
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -37,6 +37,23 @@
 
 
         }
+        .searchimg{
+            height: 300px;
+            border-radius: 10px;
+        }
+        @media only screen and (max-width: 600px) {
+        .searchimg{
+            height: 158px;
+            border-radius: 10px;
+        }
+    }
+        .searchcard{
+            margin: 5px;
+        }
+        .search-page{
+            margin: 5px;
+            margin-top: 10px;
+        }
 
     </style>
 
@@ -48,7 +65,7 @@
         <!-- Sidebar  -->
         <nav id="sidebar">
             <div class="sidebar-header">
-                <div class="d-flex justify-content-around">
+                <div class="d-flex  justify-content-around">
 
                     <img src="img_avatar.png" alt="Avatar" class="sidebaravatar">
 
@@ -140,17 +157,17 @@
                 <a href="index.html">
                     <div class="p-2 "><i class='bx bxs-chevron-left bx-sm'></i></div>
                 </a>
-                <div class="p-2 marketplace-title">Notifications</div>
+                <div class="p-2 marketplace-tite">Your Bookmarks</div>
                 <div class="p-2 ">
                     <i class='bx bx-search-alt-2'></i>
-                    <i class='bx bx-bookmark'></i>
+                    
 
                 </div>
 
 
             </div>
 
-
+            
         </div>
     </div>
 
@@ -159,7 +176,7 @@
     <!-- MOBILE NAV -->
     <div class="bottom-navbar">
         
-        <button class=" bottom-navbtn">
+        <button class="bottom-navbtn">
             <a href="index.html"><i class='bx bx-home bx-tada-hover '></i></a> 
             
         </button>
@@ -170,8 +187,8 @@
             class="float bottom-navbtn">
            <a href="uploadpost.html"><i class='bx bx-plus' ></i></a> 
         </button>
-        <button class=" active bottom-navbtn">
-            <a href="notification.html "><i class='bx bx-heart bx-tada-hover '></i></a>
+        <button class="bottom-navbtn">
+            <a href="notification.html"><i class='bx bx-heart bx-tada-hover '></i></a>
         </button>
         <button class="bottom-navbtn">
             <a href="profile.html"><i class='bx bx-user bx-tada-hover' ></i></a>
