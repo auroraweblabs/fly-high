@@ -260,6 +260,7 @@ a.article:hover {
 @media only screen and (max-width: 600px) {
   #content {
     margin-left: 0%;
+    overflow-x: hidden;
   }
 }
 
