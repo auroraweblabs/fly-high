@@ -367,7 +367,7 @@ a.article:hover {
 }
 @media screen and (max-width: 480px) {
 .story{
-  padding-left: 42px;
+  padding-left: 50px;
 }
 }
 
