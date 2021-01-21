@@ -252,16 +252,20 @@ a.article:hover {
 
 #content {
   width: 100%;
-  margin-left: 16em;
+  margin-left: 15.6em;
 
   min-height: 100vh;
   transition: all 0.3s;
 }
+
+
 @media only screen and (max-width: 600px) {
   #content {
     margin-left: 0%;
     overflow-x: hidden;
+    opacity: 1;
   }
+  
 }
 
 /* ---------------------------------------------------
@@ -351,11 +355,76 @@ a.article:hover {
   margin-left: 5px;
   border-radius: 50%;
 }
-
+.Welecome-text{
+  font-weight: 500;
+  font-size: 25px;
+}
 .story {
   display: inline-flex;
   padding-bottom: 15px;
   overflow-x: auto;
+  
+}
+@media screen and (max-width: 480px) {
+.story{
+  padding-left: 42px;
+}
+}
+
+
+
+.storycard{
+  margin: 4px;
+  margin-top: 50px;
+  padding-bottom: 30px;
+  border-radius: 20px;
+  padding: 5px;
+  transition: all .2s ease-in-out; 
+}
+
+.storycard:hover { 
+  transform: scale(1.01);
+ }
+.storycard-username{
+      
+      font-size: 25px;
+      line-height: 1.0;
+      
+      
+}
+.story-name{
+  font-size: 20px;
+  margin-top: -10px;
+
+}
+.postavatar1{
+  margin-top: -62px;
+    margin-right: 65px;
+    margin-bottom: 10px;
+    margin-left: 65px;
+  vertical-align: middle;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+
+}
+.story-img{
+  margin: 2px;
+  margin-bottom: 10px;
+}
+.btn-storycard{
+  border-radius: 20px;
+  background: rgb(232, 76, 79);
+  box-shadow: 0px 10px 20px 0px rgba(232, 76, 79, 0.4);
+  color: white;
+  margin-bottom: 15px;
+  
+}
+.postavatar2{
+  width: 75px;
+  height: 75px;
+  border-radius: 10px;
+
 }
 
 .postcard {
@@ -652,13 +721,23 @@ a.article:hover {
 .marketcardtxt {
   margin-left: 90px;
   margin-top: 50px;
+  font-size: 30px;
+    color: black;
+
+}
+.ad-head{
+  font-weight: 500;
+  font-size: 20px;
+  color: rgb(232, 76, 79); ;
 }
 .btn-ad {
   margin-right: 200px;
   margin-top: -20px;
-  background-color: #ff9494;
-  border-radius: 20px;
+  background: rgb(232, 76, 79);
+  box-shadow: 0px 10px 20px 0px rgba(232, 76, 79, 0.4);
   color: white;
+  border-radius: 20px;
+  
   font-weight: bold;
   font-size: 17px;
 }
@@ -672,16 +751,18 @@ a.article:hover {
   .market-top-image {
     height: 150px;
     width: auto;
-    margin-left: -15px;
+
+   margin-top: 27px
   }
   .marketcardtxt {
     margin-left: 0%;
     margin-top: 0%;
+    font-size: 15px;
   }
   .btn-ad {
     margin-right: 20px;
     margin-top: -20px;
-    background-color: #ff9494;
+  
   }
 
   .marketnavbar {
@@ -721,6 +802,9 @@ a.article:hover {
     width: 100px;
     border-radius: 20px;
     height: auto;
+  }
+  .marketadcard-body{
+    padding: 11px;
   }
 
   .figure {
