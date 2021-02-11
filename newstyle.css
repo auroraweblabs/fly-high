@@ -441,9 +441,7 @@ a.article:hover {
   margin-bottom: 15px;
   max-width: 350px;
 }
-.cardmodal {
-  margin-top: -50px;
-}
+
 .postheader {
   padding-bottom: 40px;
   padding-top: 10px;
@@ -649,39 +647,12 @@ a.article:hover {
 .bookmark {
   margin-left: 175px;
 }
-/* Bottom */
-.modal {
-  /* other stuff we already covered */
 
-  margin-top: 180px;
-}
 
 .list-group-item {
   border: none;
 }
 
-.modal.bottom.fade .modal-dialog {
-  bottom: -100%;
-  -webkit-transition: opacity 0.3s linear, bottom 0.3s ease-out;
-  -moz-transition: opacity 0.3s linear, bottom 0.3s ease-out;
-  -o-transition: opacity 0.3s linear, bottom 0.3s ease-out;
-  transition: opacity 0.3s linear, bottom 0.3s ease-out;
-}
-
-.modal.bottom.fade.show .modal-dialog {
-  bottom: 0;
-}
-
-.modal.bottom.fade .modal-dialog {
-  bottom: -100%;
-}
-@media only screen and (max-width: 600px) {
-  .modal {
-    margin-top: 340px;
-    width: 450px;
-    margin-left: -10px;
-  }
-}
 .market-bottom-card {
   padding: 1%;
   padding-bottom: 0%;
@@ -1049,16 +1020,8 @@ a.article:hover {
 .market-tablist {
     padding-top: 10px;
     padding-bottom: 10px;
-
-
-   
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
-
-
-
-
-
     background-color: white;
 }
 

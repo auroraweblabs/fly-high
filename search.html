@@ -176,46 +176,123 @@
 
             </div>
             <div class="d-flex flex-wrap justify-content-around search-page">
-                <div class="searchcard">
-                   <a href="post.html"><img class=" searchimg" src="post1.jpg" alt="Card image"></a> 
+                <div class="searchcard" data-toggle="modal"
+                data-target="#myModal-post">
+                   <img class=" searchimg" src="post1.jpg" alt="Card image">
                   </div>
-                  <div class="searchcard">
-                    <a href="post.html"><img class=" searchimg" src="post1.jpg" alt="Card image"></a> 
+                  <div class="searchcard" data-toggle="modal"
+                  data-target="#myModal-post">
+                    <img class=" searchimg" src="post1.jpg" alt="Card image"> 
                    </div>
-                  <div class="searchcard">
+                  <div class="searchcard " data-toggle="modal"
+                  data-target="#myModal-post">
                     <img class=" searchimg" src="post1.jpg" alt="Card image">
                   </div>
-                  <div class="searchcard">
+                  <div class="searchcard" data-toggle="modal"
+                  data-target="#myModal-post">
                     <img class=" searchimg" src="post1.jpg" alt="Card image">
                   </div>
-                  <div class="searchcard">
+                  <div class="searchcard" data-toggle="modal"
+                  data-target="#myModal-post">
                     <img class=" searchimg" src="post1.jpg" alt="Card image">
                   </div>
-                  <div class="searchcard">
+                  <div class="searchcard" data-toggle="modal"
+                  data-target="#myModal-post">
                     <a href="post.html"><img class=" searchimg" src="post1.jpg" alt="Card image"></a> 
                    </div>
-                   <div class="searchcard">
-                    <a href="post.html"><img class=" searchimg" src="post1.jpg" alt="Card image"></a> 
-                   </div>
-                   <div class="searchcard">
-                    <a href="post.html"><img class=" searchimg" src="post1.jpg" alt="Card image"></a> 
-                   </div>
-                   <div class="searchcard">
-                    <a href="post.html"><img class=" searchimg" src="post1.jpg" alt="Card image"></a> 
-                   </div>
-                   <div class="searchcard">
-                    <a href="post.html"><img class=" searchimg" src="post1.jpg" alt="Card image"></a> 
-                   </div>
-                   <div class="searchcard">
-                    <a href="post.html"><img class=" searchimg" src="post1.jpg" alt="Card image"></a> 
-                   </div>
-                   <div class="searchcard">
-                    <a href="post.html"><img class=" searchimg" src="post1.jpg" alt="Card image"></a> 
-                   </div>
+                   
             </div>
         </div>
     </div>
-
+    <div class="modal" id="myModal-post">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+    
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h1 class="modal-title">Post</h1>
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+    
+                <!-- Modal body -->
+                <div class="modal-body post-modal">
+                    <div class="postcard">
+                        <!--post header-->
+                        <div class="d-flex  flex-row postheader   ">
+        
+                            <div class="p-2"><img src="img_avatar2.png" alt="Avatar" class="postavatar"></div>
+                            <div class="mr-auto  postusertext ">
+                                <span class="post-username">username</span><br>
+                                <span class="posttime"><i class='bx bx-globe'></i> 10h ago</span>
+        
+        
+                            </div>
+        
+                            <div class="p-2 ml-auto">
+        
+                                <a type="button" class="btn btn-sm " data-toggle="modal" data-target="#bottom_modal">
+                                    <i class='bx bx-dots-vertical-rounded bx-sm cardmodal'></i>
+                                </a>
+                            </div>
+        
+        
+        
+        
+                        </div>
+                        <!--post image-->
+                        <div class="newpost ">
+                            <svg class="icon icon-heart">
+                                <use xlink:href="#icon-heart"></use>
+                            </svg>
+                            <img class=" postimg" src="post1.jpg" alt="Card image">
+                        </div>
+                        <!--post footer-->
+                        <div class="d-flex flex-row  ">
+                            <div class="p-2">
+                                <button type="button" class="btn post-likebtn  btn-sm btn-light">
+                                    <i class='bx bxs-heart bx-tada'></i> <span id="baba">0</span>
+                                </button>
+                            </div>
+        
+                            <div class=" p-2">
+                                <button type="button" class="btn btn-sm post-sharebtn btn-light"><i
+                                        class='bx bxs-paper-plane '></i></button>
+                            </div>
+        
+                            <div class=" p-2 bookmark">
+                                <button type="button" class="btn btn-sm post-savebtn btn-light"><i
+                                        class='bx bx-bookmark-alt '></i></button>
+                            </div>
+        
+                        </div>
+                        <!--post text-->
+                        <div class="quotes">
+                            <p> Lorem ipsummmm Loremmmm
+                                <span id="dots">...</span><span id="more">erisque enim ligula
+                                    venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor
+                                    vitae massa. Fusce
+                                    luctus
+                                    auctor vitae massa. Fusce luctus
+                                    porta.</span>
+        
+                                <button onclick="myFunction()" id="myBtn"
+                                    class="post-morebtn btn-light btn-sm">More</button>
+                            </p>
+                        </div>
+                        <!--post text-->
+        
+                    </div>
+                </div>
+    
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-success" data-dismiss="modal">Save</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+    
+            </div>
+        </div>
+    </div>
 
 
     <!-- MOBILE NAV -->
